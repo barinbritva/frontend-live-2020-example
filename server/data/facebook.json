@@ -3,9 +3,11 @@
     "id": 500,
     "text": "Hello",
     "date": "2020 09 16 10:34:00",
-    "likesAmount": 13,
-    "repostsAmount": 12,
+    "likesAmount": 15,
+    "repostsAmount": 13,
     "comments": [
+      "hello",
+      "wef",
       "wef",
       "wefe",
       "wefe",
@@ -28,7 +30,7 @@
     "text": "Summer days with Donny. Hooray! 🎉",
     "date": "2020 09 14 12:34:00",
     "likesAmount": 99,
-    "repostsAmount": 15,
+    "repostsAmount": 0,
     "comments": [
       "Cool moto, bro!",
       "You drive lika a crazy!"

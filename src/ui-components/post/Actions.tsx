@@ -16,16 +16,19 @@ export class Actions extends React.Component<ActionsProps, any> {
 
   render() {
     const post = this.props.post;
+    const repostElement = post.likesAmount == null
+    ? null
+    : <div>
+        <button onClick={this.handleRepost}>Repost</button>
+        {post.repostsAmount === 0 ? null : <span>{post.repostsAmount}</span>}
+      </div>
 
     return <div style={container}>
       <div>
         <button onClick={this.handleLike}>Like</button>
         <span>{post.likesAmount}</span>
       </div>
-      <div>
-        <button onClick={this.handleRepost}>Repost</button>
-        <span>{post.repostsAmount}</span>
-      </div>
+      {repostElement}
     </div>
   }
 }

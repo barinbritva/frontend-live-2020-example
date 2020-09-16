@@ -23,7 +23,6 @@ export class App extends React.Component<any, AppState> {
       (posts) => {
         console.log('update', posts);
         this.setState({ posts: posts });
-        // this.forceUpdate()
       });
   }
 

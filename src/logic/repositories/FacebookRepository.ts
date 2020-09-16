@@ -13,11 +13,7 @@ export class FacebookRepository implements RepostableSocialMediaRepository {
         post: post,
         text: comment
       }
-    }).then((response: Response<any>) => {
-      const item = response.data;
-
-      return this.formatPost(item);
-    })
+    }).then(this.formatPostFromResponseData.bind(this))
   }
 
   public getAllPosts(): Promise<WallPost[]> {
@@ -42,11 +38,7 @@ export class FacebookRepository implements RepostableSocialMediaRepository {
       data: {
         post: post
       }
-    }).then((response: Response<any>) => {
-      const item = response.data;
-
-      return this.formatPost(item);
-    })
+    }).then(this.formatPostFromResponseData.bind(this))
   }
 
   public repostPost(post: WallPost): Promise<WallPost> {
@@ -56,11 +48,11 @@ export class FacebookRepository implements RepostableSocialMediaRepository {
       data: {
         post: post
       }
-    }).then((response: Response<any>) => {
-      const item = response.data;
+    }).then(this.formatPostFromResponseData.bind(this))
+  }
 
-      return this.formatPost(item);
-    })
+  private formatPostFromResponseData(response: Response<any[]>): WallPost {
+    return this.formatPost(response.data);
   }
 
   private formatPost(item: any): WallPost {
