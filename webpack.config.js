@@ -12,5 +12,6 @@ module.exports = {
     rules: [
       { test: /\.tsx?$/, loader: 'ts-loader' }
     ]
-  }
+  },
+  devtool: 'source-map'
 }

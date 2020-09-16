@@ -18,7 +18,3 @@ export const avatar: CSS.Properties = {
 export const postImage: CSS.Properties = {
   width: '100%'
 }
-
-export const actionContainer: CSS.Properties = {
-  display: 'flex'
-}
