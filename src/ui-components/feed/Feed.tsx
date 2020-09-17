@@ -8,6 +8,7 @@ export class Feed extends React.Component<FeedProps, any> {
     const postsElements = this.props.posts.map((post) => {
       return <Post
         key={post.provider + post.id}
+        user={this.props.user}
         post={post}
         commentPost={this.props.commentPost}
         likePost={this.props.likePost}

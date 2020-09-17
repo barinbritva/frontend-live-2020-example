@@ -51,7 +51,7 @@ function addRouteHandlers(app) {
       return res.status(401).send('Unprocessable entity.');
     }
 
-    postToUpdate.comments.unshift(payload.text);
+    postToUpdate.comments.unshift(payload.comment);
     writeFile(file, data);
 
     console.log(postToUpdate)

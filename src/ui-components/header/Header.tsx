@@ -1,20 +1,23 @@
 import React from 'react';
 import {avatarImage, container, content, userContainer} from './headerStyles'
+import {HeaderProps} from './HeaderProps';
 
-export class Header extends React.Component<object, object> {
+export class Header extends React.Component<HeaderProps, object> {
   render() {
+    const user = this.props.user;
+
     return <header style={container}>
       <div style={content}>
        <h1>MyFeed</h1>
         <div style={userContainer}>
           <img
             style={avatarImage}
-            src={'https://avatars2.githubusercontent.com/u/4758362?s=460&u=f32df0d3035eaec0440246dec3f4cb934e298f6e&v=4'}
-            alt={'Ali Ragimov'}
+            src={user.avatar}
+            alt={user.name}
           />
           <div>
-            <div>Ali Ragimov</div>
-            <div>@barinbritva</div>
+            <div>{user.name}</div>
+            <div>@{user.username}</div>
           </div>
         </div>
       </div>

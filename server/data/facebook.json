@@ -3,22 +3,65 @@
     "id": 500,
     "text": "Hello",
     "date": "2020 09 16 10:34:00",
-    "likesAmount": 17,
-    "repostsAmount": 16,
+    "likesAmount": 22,
+    "repostsAmount": 19,
     "comments": [
-      "miiiiu",
-      "hello",
-      "wef",
-      "wef",
-      "wefe",
-      "wefe",
-      "hello",
-      "wefewf",
-      "????",
-      "huy",
-      "wef",
-      "wfwefwf",
-      "wf"
+      {
+        "text": "123",
+        "date": "Thu, 17 Sep 2020 15:37:24 GMT",
+        "author": {
+          "name": "Ali Ragimov",
+          "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C"
+        }
+      },
+      {
+        "text": "wef",
+        "date": "Thu, 17 Sep 2020 15:37:05 GMT",
+        "author": {
+          "name": "Ali Ragimov",
+          "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C"
+        }
+      },
+      {
+        "text": "Wow!",
+        "date": "Thu, 17 Sep 2020 15:34:12 GMT",
+        "author": {
+          "name": "Ali Ragimov",
+          "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C"
+        }
+      },
+      {
+        "text": "hello",
+        "date": "Thu, 17 Sep 2020 15:25:49 GMT",
+        "author": {
+          "name": "Ali Ragimov",
+          "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C"
+        }
+      },
+      {
+        "text": "wefewf",
+        "date": "2020 09 16 10:34:00",
+        "author": {
+          "name": "Ali Ragimov",
+          "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C"
+        }
+      },
+      {
+        "text": "Cool moto, bro!",
+        "date": "2020 09 16 10:34:00",
+        "author": {
+          "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C",
+          "name": "Barin Britva"
+        }
+      },
+      {
+        "text": "You drive lika a crazy!",
+        "date": "2020 09 16 10:34:00",
+        "author": {
+          "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C",
+          "name": "Barin Britva"
+        }
+      }
     ],
     "author": {
       "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C",
@@ -32,10 +75,7 @@
     "date": "2020 09 14 12:34:00",
     "likesAmount": 99,
     "repostsAmount": 0,
-    "comments": [
-      "Cool moto, bro!",
-      "You drive lika a crazy!"
-    ],
+    "comments": [],
     "author": {
       "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C",
       "name": "Barin Britva",

@@ -2,6 +2,7 @@ import {BaseSocialMediaRepository} from '../interfaces/BaseSocialMediaRepository
 import {RepostableSocialMediaRepository} from '../interfaces/RepostableSocialMediaRepository';
 import {WallPost} from '../interfaces/WallPost';
 import {SocialMediaProvider} from '../types/SocialMediaProvider';
+import {PostComment} from '../interfaces/PostComment';
 
 export class RepositoryComposite implements RepostableSocialMediaRepository {
   public provider: SocialMediaProvider = 'composite';
@@ -13,7 +14,7 @@ export class RepositoryComposite implements RepostableSocialMediaRepository {
     this.enabledRepositories = this.repositories;
   }
 
-  public commentPost(post: WallPost, comment: string): Promise<WallPost> {
+  public commentPost(post: WallPost, comment: PostComment): Promise<WallPost> {
     const repository = this.findPostProvider(post);
 
     return repository.commentPost(post, comment);

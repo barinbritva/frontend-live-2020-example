@@ -1,5 +1,6 @@
 import {PostAuthor} from './PostAuthor';
 import {SocialMediaProvider} from '../types/SocialMediaProvider';
+import {PostComment} from './PostComment';
 
 export interface WallPost {
   provider: SocialMediaProvider;
@@ -9,6 +10,6 @@ export interface WallPost {
   likesAmount: number;
   repostsAmount?: number;
   author: PostAuthor;
-  comments: string[];
+  comments: PostComment[];
   image?: string;
 }

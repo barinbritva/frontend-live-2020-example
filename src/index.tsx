@@ -5,4 +5,7 @@ import {createStores} from './logic/bootstrap/createStores';
 
 const stores = createStores();
 
-ReactDOM.render(<App feedStore={stores[0]} filterStore={stores[1]} />, document.getElementById('app'));
+ReactDOM.render(
+  <App feedStore={stores[0]} filterStore={stores[1]} user={stores[2]}/>,
+  document.getElementById('app')
+);

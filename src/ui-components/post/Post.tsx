@@ -41,7 +41,7 @@ export class Post extends React.Component<PostProps, any> {
       <footer>
         <Actions post={post} repostPost={this.props.repostPost} likePost={this.props.likePost}/>
         <Comments comments={post.comments} post={post} />
-        <CommentForm post={post} commentPost={this.props.commentPost} />
+        <CommentForm user={this.props.user} post={post} commentPost={this.props.commentPost} />
       </footer>
     </article>
   }

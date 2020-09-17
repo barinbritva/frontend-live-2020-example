@@ -48,9 +48,10 @@ export class App extends React.Component<AppProps, AppState> {
     const filterStore = this.props.filterStore;
 
     return <div>
-        <Header />
+        <Header user={this.props.user} />
         <div style={contentContainer}>
           <Feed
+            user={this.props.user}
             posts={this.state.posts}
             commentPost={feedStore.comment}
             likePost={feedStore.like}

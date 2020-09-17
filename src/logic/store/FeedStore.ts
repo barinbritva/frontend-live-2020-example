@@ -2,6 +2,7 @@ import {WallPost} from '../interfaces/WallPost';
 import {RepositoryComposite} from '../service/RepositoryComposite';
 import {SocialMediaProvider} from '../types/SocialMediaProvider';
 import {BaseStore} from './BaseStore';
+import {PostComment} from '../interfaces/PostComment';
 
 export class FeedStore extends BaseStore<WallPost[]>{
   private readonly provider: RepositoryComposite;
@@ -25,27 +26,24 @@ export class FeedStore extends BaseStore<WallPost[]>{
         })
   }
 
-  public comment = (post: WallPost, comment: string) => {
+  public comment = (post: WallPost, comment: PostComment) => {
     this.provider.commentPost(post, comment).then((modifiedPost) => {
       console.log('commented post', modifiedPost);
-      this.updatePostData(modifiedPost);
-      this.notifySubscribers(this.posts)
+      this.updatePostDataAndNotify(modifiedPost);
     })
   }
 
   public like = (post: WallPost) => {
     this.provider.likePost(post).then((modifiedPost) => {
       console.log('liked post', modifiedPost);
-      this.updatePostData(modifiedPost);
-      this.notifySubscribers(this.posts)
+      this.updatePostDataAndNotify(modifiedPost);
     })
   }
 
   public repost = (post: WallPost) => {
     this.provider.repostPost(post).then((modifiedPost) => {
       console.log('reposted post', modifiedPost);
-      this.updatePostData(modifiedPost);
-      this.notifySubscribers(this.posts)
+      this.updatePostDataAndNotify(modifiedPost);
     })
   }
 
@@ -55,6 +53,11 @@ export class FeedStore extends BaseStore<WallPost[]>{
 
   public getFilters = (): SocialMediaProvider[] => {
     return this.provider.getFilters();
+  }
+
+  private updatePostDataAndNotify(modifiedPost: WallPost) {
+    this.updatePostData(modifiedPost);
+    this.notifySubscribers(this.posts);
   }
 
   private updatePostData(modifiedPost: WallPost) {

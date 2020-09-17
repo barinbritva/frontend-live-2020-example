@@ -5,4 +5,7 @@ import {App} from '../src/ui-components/app/App';
 
 const stores = createStores();
 
-ReactDOM.render(<App feedStore={stores[0]} filterStore={stores[1]} />, document.getElementById('test-node'));
+ReactDOM.render(
+  <App feedStore={stores[0]} filterStore={stores[1]} user={stores[2]} />,
+  document.getElementById('test-node')
+);

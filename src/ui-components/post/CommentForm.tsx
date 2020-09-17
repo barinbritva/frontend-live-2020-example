@@ -2,6 +2,7 @@ import React, {ChangeEvent, SyntheticEvent} from 'react';
 import {button, container, input} from './commentFormStyles';
 import {CommentFormState} from './CommentFormState';
 import {CommentFormProps} from './CommentFormProps';
+import {PostComment} from '../../logic/interfaces/PostComment';
 
 export class CommentForm extends React.Component<CommentFormProps, CommentFormState> {
   constructor(props: any, context?: any) {
@@ -20,8 +21,18 @@ export class CommentForm extends React.Component<CommentFormProps, CommentFormSt
 
   handleSubmit = (event: SyntheticEvent) => {
     event.preventDefault();
+    const user = this.props.user;
 
-    this.props.commentPost(this.props.post, this.state.text)
+    const comment: PostComment = {
+      text: this.state.text,
+      date: new Date(),
+      author: {
+        name: user.name,
+        avatar: user.avatar
+      }
+    }
+
+    this.props.commentPost(this.props.post, comment)
 
     this.setState({
       text: ''
