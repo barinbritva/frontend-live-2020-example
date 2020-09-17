@@ -1,86 +1,47 @@
 [
   {
     "id": 500,
-    "text": "Hello",
-    "date": "2020 09 16 10:34:00",
-    "likesAmount": 22,
-    "repostsAmount": 19,
+    "text": "My love, thank you for taking care of this family and helping us wash dishes and clothes every day ",
+    "date": "2020 09 16 05:05:13",
+    "likesAmount": 58,
+    "repostsAmount": 16,
     "comments": [
       {
-        "text": "123",
-        "date": "Thu, 17 Sep 2020 15:37:24 GMT",
+        "text": "Dina: \"yeah I do almost everything in the house then you said \"I don't eat, I don't sleep\" lol",
+        "date": "Thu, 16 Sep 2020 15:37:24 GMT",
         "author": {
-          "name": "Ali Ragimov",
-          "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C"
+          "name": "Nate Nguyen",
+          "avatar": "/images/avatars/nate_nguyen.jpg"
         }
       },
       {
-        "text": "wef",
-        "date": "Thu, 17 Sep 2020 15:37:05 GMT",
+        "text": "Dina: please Ellie you have a family",
+        "date": "Thu, 17 Sep 2020 03:30:18 GMT",
         "author": {
-          "name": "Ali Ragimov",
-          "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C"
-        }
-      },
-      {
-        "text": "Wow!",
-        "date": "Thu, 17 Sep 2020 15:34:12 GMT",
-        "author": {
-          "name": "Ali Ragimov",
-          "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C"
-        }
-      },
-      {
-        "text": "hello",
-        "date": "Thu, 17 Sep 2020 15:25:49 GMT",
-        "author": {
-          "name": "Ali Ragimov",
-          "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C"
-        }
-      },
-      {
-        "text": "wefewf",
-        "date": "2020 09 16 10:34:00",
-        "author": {
-          "name": "Ali Ragimov",
-          "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C"
-        }
-      },
-      {
-        "text": "Cool moto, bro!",
-        "date": "2020 09 16 10:34:00",
-        "author": {
-          "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C",
-          "name": "Barin Britva"
-        }
-      },
-      {
-        "text": "You drive lika a crazy!",
-        "date": "2020 09 16 10:34:00",
-        "author": {
-          "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C",
-          "name": "Barin Britva"
+          "name": "Arñ Öak Honor",
+          "avatar": "/images/avatars/honor.jpg"
         }
       }
     ],
     "author": {
-      "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C",
-      "name": "Barin Britva",
-      "profileLink": "https://facebook.com/barinbritva"
-    }
+      "avatar": "/images/avatars/ray_ng.jpg",
+      "name": "Ray Ng",
+      "profileLink": "https://www.facebook.com/feiniao.baibo"
+    },
+    "image" : "/images/posts/500.jpg"
   },
   {
     "id": 489,
-    "text": "Summer days with Donny. Hooray! 🎉",
-    "date": "2020 09 14 12:34:00",
-    "likesAmount": 99,
-    "repostsAmount": 0,
+    "text": "Oh hello new tattoo",
+    "date": "2020 09 16 19:34:00",
+    "likesAmount": 274,
+    "repostsAmount": 8,
     "comments": [],
     "author": {
-      "avatar": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/109299228_225454511915197_9050500074834384651_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_ohc=Gg97jrW8X-UAX8TM4QZ&oh=2a19cd81174c8611c7887c72352c4181&oe=5F8A920C",
-      "name": "Barin Britva",
-      "profileLink": "https://facebook.com/barinbritva"
+      "avatar": "/images/avatars/emanuel_pittner.jpg",
+      "name": "Emanuel Pittner",
+      "profileLink": "https://www.facebook.com/emanuel.pittner.35"
     },
-    "image": "https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/106913487_949612195465379_2284928752937235880_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=4QKwpaTiqvgAX_xKwhc&oh=5f531eac517838e643d9e427389260e2&oe=5F892A00"
+    "image": "/images/posts/489.jpg"
   }
 ]

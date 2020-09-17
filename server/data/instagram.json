@@ -1,0 +1,70 @@
+[
+  {
+    "id": 319,
+    "text": "Power and Performance runs in the family. 1 week until pre-orders.",
+    "date": "2020 09 16 10:34:00",
+    "likesAmount": 397751,
+    "comments": [
+      {
+        "text": "Can't wait to own both of them!!",
+        "date": "Thu, 16 Sep 2020 15:37:24 GMT",
+        "author": {
+          "name": "gzt_boss",
+          "avatar": "/images/avatars/gzt_boss.jpg"
+        }
+      },
+      {
+        "text": "Are there going to be xbox 360 games that are going to be compatible or is it only the xbox one games?",
+        "date": "Thu, 16 Sep 2020 18:37:05 GMT",
+        "author": {
+          "name": "xourl",
+          "avatar": "/images/avatars/xourl.jpg"
+        }
+      },
+      {
+        "text": "Ps is way better than Xbox",
+        "date": "Thu, 17 Sep 2020 09:13:12 GMT",
+        "author": {
+          "name": "tom___fn",
+          "avatar": "/images/avatars/tom___fn.jpg"
+        }
+      }
+    ],
+    "author": {
+      "avatar": "/images/avatars/xbox.jpg",
+      "name": "xbox",
+      "profileLink": "https://www.instagram.com/xbox"
+    },
+    "image" : "/images/posts/319.jpg"
+  },
+  {
+    "id": 134,
+    "text": "The next generation of speed and performance is smaller than you thought.",
+    "date": "2020 09 10 12:34:00",
+    "likesAmount": 539008,
+    "comments": [
+      {
+        "text": "I will get Xbox series s.",
+        "date": "Thu, 10 Sep 2020 13:13:12 GMT",
+        "author": {
+          "name": "andrew.6520",
+          "avatar": "/images/avatars/andrew.6520.jpg"
+        }
+      },
+      {
+        "text": "Xbox>PlayStation baby",
+        "date": "Thu, 10 Sep 2020 13:45:03 GMT",
+        "author": {
+          "name": "flawlessfortnite",
+          "avatar": "/images/avatars/flawlessfortnite.jpg"
+        }
+      }
+    ],
+    "author": {
+      "avatar": "/images/avatars/xbox.jpg",
+      "name": "xbox",
+      "profileLink": "https://www.instagram.com/xbox"
+    },
+    "image": "/images/posts/134.jpg"
+  }
+]
