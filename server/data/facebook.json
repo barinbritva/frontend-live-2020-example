@@ -1,7 +1,7 @@
 [
   {
     "id": 500,
-    "text": "My love, thank you for taking care of this family and helping us wash dishes and clothes every day ",
+    "text": "My love, thank you for taking care of this family and helping us wash dishes and clothes every day",
     "date": "2020 09 16 05:05:13",
     "likesAmount": 58,
     "repostsAmount": 16,
@@ -28,7 +28,7 @@
       "name": "Ray Ng",
       "profileLink": "https://www.facebook.com/feiniao.baibo"
     },
-    "image" : "/images/posts/500.jpg"
+    "image": "/images/posts/500.jpg"
   },
   {
     "id": 489,

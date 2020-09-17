@@ -16,7 +16,7 @@ export class Actions extends React.Component<ActionsProps, any> {
 
   render() {
     const post = this.props.post;
-    const repostElement = post.likesAmount == null
+    const repostElement = post.repostsAmount == null
     ? null
     : <div>
         <button onClick={this.handleRepost}>Repost</button>

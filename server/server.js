@@ -3,14 +3,16 @@ const fs = require('fs');
 const express = require('express');
 const bodyParser = require('body-parser');
 const applyFacebookRoutes = require('./applyFacebookRoutes');
+const applyInstagramRoutes = require('./applyInstagramRoutes');
 
 function startServer(port, callback) {
   const app = express();
 
   app.set('port', port);
   app.use('/', express.static(path.join(__dirname, '../public')));
-  app.use(bodyParser.json())
+  app.use(bodyParser.json());
   applyFacebookRoutes(app);
+  applyInstagramRoutes(app);
 
   const server = app.listen(app.get('port'));
 

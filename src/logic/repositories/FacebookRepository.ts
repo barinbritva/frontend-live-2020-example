@@ -5,10 +5,12 @@ import {SocialMediaProvider} from '../types/SocialMediaProvider';
 import {PostComment} from '../interfaces/PostComment';
 
 export class FacebookRepository implements RepostableSocialMediaRepository {
-  provider: SocialMediaProvider = 'facebook';
+  public provider: SocialMediaProvider = 'facebook';
+  private readonly facebookUrl: string = '/api/facebook';
+
   public commentPost(post: WallPost, comment: PostComment): Promise<WallPost> {
     return request({
-      url: '/api/facebook/comment',
+      url: this.facebookUrl + '/comment',
       method: 'post',
       data: {
         post: post,
@@ -23,7 +25,7 @@ export class FacebookRepository implements RepostableSocialMediaRepository {
 
   public getAllPosts(): Promise<WallPost[]> {
     return request({
-      url: '/api/facebook/get-all',
+      url:  this.facebookUrl + '/get-all',
       method: 'get',
     })
       .then((response: Response<any[]>) => {
@@ -38,7 +40,7 @@ export class FacebookRepository implements RepostableSocialMediaRepository {
 
   public likePost(post: WallPost): Promise<WallPost> {
     return request({
-      url: '/api/facebook/like',
+      url:  this.facebookUrl + '/like',
       method: 'post',
       data: {
         post: post
@@ -48,7 +50,7 @@ export class FacebookRepository implements RepostableSocialMediaRepository {
 
   public repostPost(post: WallPost): Promise<WallPost> {
     return request({
-      url: '/api/facebook/repost',
+      url:  this.facebookUrl + '/repost',
       method: 'post',
       data: {
         post: post
@@ -62,7 +64,7 @@ export class FacebookRepository implements RepostableSocialMediaRepository {
 
   private formatPost(item: any): WallPost {
     return {
-      provider: 'facebook',
+      provider: this.provider,
       repostsAmount: item.repostsAmount,
       likesAmount: item.likesAmount,
       author: item.author,

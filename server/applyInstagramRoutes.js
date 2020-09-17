@@ -43,26 +43,7 @@ module.exports = function applyFacebookRoutes(app) {
       return res.status(401).send('Unprocessable entity.');
     }
 
-    postToUpdate.likesAmount++;
-    writeFile(file, data);
-
-    res.json(postToUpdate);
-  })
-
-  app.post(`${urlPrefix}/post/repost`, function (req, res) {
-    const file = dataFilePath;
-    const data = readFile(file);
-    const payload = req.body;
-
-    const postToUpdate = data.find((post) => {
-      return post.id === payload.post.id;
-    })
-
-    if (postToUpdate == null) {
-      return res.status(401).send('Unprocessable entity.');
-    }
-
-    postToUpdate.repostsAmount++;
+    postToUpdate.likes++;
     writeFile(file, data);
 
     res.json(postToUpdate);
