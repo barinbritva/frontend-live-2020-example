@@ -1,5 +1,5 @@
 import {WallPost} from '../interfaces/WallPost';
-import {RepositoryComposite} from '../service/RepositoryComposite';
+import {RepositoryComposite} from '../interfaces/RepositoryComposite';
 import {SocialMediaProvider} from '../types/SocialMediaProvider';
 import {BaseStore} from './BaseStore';
 import {PostComment} from '../interfaces/PostComment';

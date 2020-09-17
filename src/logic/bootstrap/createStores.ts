@@ -1,11 +1,11 @@
 import {FeedStore} from '../store/FeedStore';
 import {FilterStore} from '../store/FilterStore';
-import {RepositoryComposite} from '../service/RepositoryComposite';
+import {RepositoryService} from '../service/RepositoryService';
 import {FacebookRepository} from '../repositories/FacebookRepository';
 import {InstagramRepository} from '../repositories/InstagramRepository';
 
 export function createStores(): [FeedStore, FilterStore] {
-  const feedStore = new FeedStore(new RepositoryComposite([
+  const feedStore = new FeedStore(new RepositoryService([
     new FacebookRepository(),
     new InstagramRepository()
   ]));

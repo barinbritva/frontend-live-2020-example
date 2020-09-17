@@ -3,13 +3,15 @@ import {RepostableSocialMediaRepository} from '../interfaces/RepostableSocialMed
 import {WallPost} from '../interfaces/WallPost';
 import {SocialMediaProvider} from '../types/SocialMediaProvider';
 import {PostComment} from '../interfaces/PostComment';
+import {SocialMediaRepository} from '../types/SocialMediaRepository';
+import {RepositoryComposite} from '../interfaces/RepositoryComposite';
 
-export class RepositoryComposite implements RepostableSocialMediaRepository {
+export class RepositoryService implements RepositoryComposite {
   public provider: SocialMediaProvider = 'composite';
-  private readonly repositories: (BaseSocialMediaRepository | RepostableSocialMediaRepository)[]
-  private enabledRepositories: (BaseSocialMediaRepository | RepostableSocialMediaRepository)[]
+  private readonly repositories: SocialMediaRepository[];
+  private enabledRepositories: SocialMediaRepository[];
 
-  constructor(repositories: (BaseSocialMediaRepository | RepostableSocialMediaRepository)[]) {
+  constructor(repositories: SocialMediaRepository[]) {
     this.repositories = repositories;
     this.enabledRepositories = this.repositories;
   }
