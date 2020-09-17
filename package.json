@@ -9,6 +9,7 @@
     "build": "./tasks/build.sh",
     "build:dev": "./tasks/build.sh -d",
     "start": "nodemon ./server/server.js --watch ./server",
+    "restore-data": "cp ./server/data-backup/* ./server/data",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
