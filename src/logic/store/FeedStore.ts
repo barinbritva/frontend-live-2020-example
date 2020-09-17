@@ -28,21 +28,21 @@ export class FeedStore extends BaseStore<WallPost[]>{
 
   public comment = (post: WallPost, comment: PostComment) => {
     this.provider.commentPost(post, comment).then((modifiedPost) => {
-      console.log('commented post', modifiedPost);
+      console.info('commented post', modifiedPost);
       this.updatePostDataAndNotify(modifiedPost);
     })
   }
 
   public like = (post: WallPost) => {
     this.provider.likePost(post).then((modifiedPost) => {
-      console.log('liked post', modifiedPost);
+      console.info('liked post', modifiedPost);
       this.updatePostDataAndNotify(modifiedPost);
     })
   }
 
   public repost = (post: WallPost) => {
     this.provider.repostPost(post).then((modifiedPost) => {
-      console.log('reposted post', modifiedPost);
+      console.info('reposted post', modifiedPost);
       this.updatePostDataAndNotify(modifiedPost);
     })
   }

@@ -24,8 +24,6 @@ export class FilterStore extends BaseStore<SocialMediaProvider[]>{
       enabledProviders.splice(itemIndex, 1);
     }
 
-    console.log('enabledProviders', enabledProviders)
-
     this.feedStore.filter(enabledProviders);
     this.notifySubscribers(this.feedStore.getFilters());
   }

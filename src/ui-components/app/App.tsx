@@ -16,12 +16,12 @@ export class App extends React.Component<AppProps, AppState> {
     super(props, context);
 
     this.filterSubscriber = (data) => {
-      console.log('filters update', data);
+      console.info('filters update', data);
       this.setState({ enabledProviders: data });
     };
 
     this.feedSubscriber = (data) => {
-      console.log('posts update', data);
+      console.info('posts update', data);
       this.setState({ posts: data });
     }
 
