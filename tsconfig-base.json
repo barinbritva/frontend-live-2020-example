@@ -12,6 +12,7 @@
     "lib": [
       "es2015",
       "es6",
+      "es7",
       "dom"
     ],
     "module": "commonjs",

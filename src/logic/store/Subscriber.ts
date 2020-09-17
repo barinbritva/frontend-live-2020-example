@@ -1,5 +1,3 @@
-import {WallPost} from '../interfaces/WallPost';
-
-export interface Subscriber {
-  (posts: WallPost[]): void
+export interface Subscriber<T> {
+  (data: T): void;
 }

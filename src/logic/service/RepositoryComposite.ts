@@ -4,11 +4,13 @@ import {WallPost} from '../interfaces/WallPost';
 import {SocialMediaProvider} from '../types/SocialMediaProvider';
 
 export class RepositoryComposite implements RepostableSocialMediaRepository {
-  provider: SocialMediaProvider = 'composite';
-  private repositories: (BaseSocialMediaRepository | RepostableSocialMediaRepository)[]
+  public provider: SocialMediaProvider = 'composite';
+  private readonly repositories: (BaseSocialMediaRepository | RepostableSocialMediaRepository)[]
+  private enabledRepositories: (BaseSocialMediaRepository | RepostableSocialMediaRepository)[]
 
   constructor(repositories: (BaseSocialMediaRepository | RepostableSocialMediaRepository)[]) {
-    this.repositories = repositories
+    this.repositories = repositories;
+    this.enabledRepositories = this.repositories;
   }
 
   public commentPost(post: WallPost, comment: string): Promise<WallPost> {
@@ -47,6 +49,18 @@ export class RepositoryComposite implements RepostableSocialMediaRepository {
     }
 
     return repository.repostPost(post);
+  }
+
+  public filterPosts(enabledProviders: SocialMediaProvider[]) {
+    this.enabledRepositories = this.repositories.filter((repository) => {
+      return enabledProviders.includes(repository.provider);
+    });
+  }
+
+  public getFilters(): SocialMediaProvider[] {
+    return this.enabledRepositories.map((repository) => {
+      return repository.provider;
+    });
   }
 
   private findPostProvider(post: WallPost): BaseSocialMediaRepository | RepostableSocialMediaRepository {

@@ -21,9 +21,7 @@ export class CommentForm extends React.Component<CommentFormProps, CommentFormSt
   handleSubmit = (event: SyntheticEvent) => {
     event.preventDefault();
 
-    const feedStore = this.props.feedStore;
-
-    feedStore.comment(this.props.post, this.state.text)
+    this.props.commentPost(this.props.post, this.state.text)
 
     this.setState({
       text: ''

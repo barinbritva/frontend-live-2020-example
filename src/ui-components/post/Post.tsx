@@ -39,9 +39,9 @@ export class Post extends React.Component<PostProps, any> {
         {imageElement}
       </main>
       <footer>
-        <Actions post={post} feedStore={this.props.feedStore}/>
-        <Comments comments={post.comments} post={post}/>
-        <CommentForm feedStore={this.props.feedStore} post={post} />
+        <Actions post={post} repostPost={this.props.repostPost} likePost={this.props.likePost}/>
+        <Comments comments={post.comments} post={post} />
+        <CommentForm post={post} commentPost={this.props.commentPost} />
       </footer>
     </article>
   }

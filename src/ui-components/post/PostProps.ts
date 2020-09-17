@@ -1,7 +1,8 @@
 import {WallPost} from '../../logic/interfaces/WallPost';
-import {FeedStore} from '../../logic/store/FeedStore';
 
 export interface PostProps {
   post: WallPost;
-  feedStore: FeedStore;
+  likePost: (post: WallPost) => void;
+  repostPost: (post: WallPost) => void;
+  commentPost: (post: WallPost, comment: string) => void;
 }

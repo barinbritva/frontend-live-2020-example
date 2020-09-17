@@ -5,13 +5,13 @@ import {ActionsProps} from './ActionsProps';
 export class Actions extends React.Component<ActionsProps, any> {
   handleLike = (event: SyntheticEvent) => {
     event.preventDefault();
-    this.props.feedStore.like(this.props.post);
+    this.props.likePost(this.props.post);
   }
 
   handleRepost = (event: SyntheticEvent) => {
     event.preventDefault();
 
-    this.props.feedStore.repost(this.props.post);
+    this.props.repostPost(this.props.post);
   }
 
   render() {
