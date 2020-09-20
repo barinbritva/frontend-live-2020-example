@@ -29,7 +29,7 @@ export class Post extends React.Component<PostProps, any> {
           <div style={postAuthor}>{post.author.name}</div>
           <div style={postData}>
             <span>{date}</span>
-            <span> * </span>
+            <span> • </span>
             <span style={{ fontStyle: 'italic' }}>{providerName}</span>
           </div>
         </div>

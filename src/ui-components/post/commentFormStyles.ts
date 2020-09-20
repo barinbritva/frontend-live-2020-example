@@ -22,4 +22,5 @@ export const button: CSS.Properties = {
   border: '1px solid rgb(153 153 153 / 28%)',
   borderBottom: 'none',
   borderRight: 'none',
+  cursor: 'pointer'
 }

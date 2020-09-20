@@ -21,6 +21,11 @@ export class CommentForm extends React.Component<CommentFormProps, CommentFormSt
 
   handleSubmit = (event: SyntheticEvent) => {
     event.preventDefault();
+
+    if (this.state.text === '') {
+      return;
+    }
+
     const user = this.props.user;
 
     const comment: PostComment = {
