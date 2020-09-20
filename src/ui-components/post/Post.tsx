@@ -1,5 +1,5 @@
 import  React from 'react';
-import {avatar, container, postImage, userContainer} from './postStyles';
+import {avatar, container, postImage, userContainer, userContainerInfo, postAuthor, postData, postText} from './postStyles';
 import {CommentForm} from './CommentForm';
 import {PostProps} from './PostProps';
 import {Comments} from './Comments';
@@ -25,17 +25,17 @@ export class Post extends React.Component<PostProps, any> {
           alt={post.author.name}
           src={post.author.avatar}
         />
-        <div>
-          <div>{post.author.name}</div>
-          <div>
+        <div style={userContainerInfo}>
+          <div style={postAuthor}>{post.author.name}</div>
+          <div style={postData}>
             <span>{date}</span>
             <span> * </span>
-            <span>{providerName}</span>
+            <span style={{ fontStyle: 'italic' }}>{providerName}</span>
           </div>
         </div>
       </header>
       <main>
-        <div>{post.text}</div>
+        <div style={postText}>{post.text}</div>
         {imageElement}
       </main>
       <footer>

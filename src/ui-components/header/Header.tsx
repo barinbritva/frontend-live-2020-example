@@ -1,5 +1,5 @@
 import React from 'react';
-import {avatarImage, container, content, userContainer} from './headerStyles'
+import {avatarImage, container, content, userContainer, heading} from './headerStyles'
 import {HeaderProps} from './HeaderProps';
 
 export class Header extends React.Component<HeaderProps, object> {
@@ -8,16 +8,16 @@ export class Header extends React.Component<HeaderProps, object> {
 
     return <header style={container}>
       <div style={content}>
-       <h1>MyFeed</h1>
+       <h1 style={heading}>MyFeed</h1>
         <div style={userContainer}>
           <img
             style={avatarImage}
             src={user.avatar}
             alt={user.name}
           />
-          <div>
-            <div>{user.name}</div>
-            <div>@{user.username}</div>
+          <div style={{ lineHeight: '20px' }}>
+            <div style={{ fontWeight: 600 }}>{user.name}</div>
+            <div style={{ fontSize: '14px' }}>@{user.username}</div>
           </div>
         </div>
       </div>

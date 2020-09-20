@@ -1,5 +1,5 @@
 import React, {SyntheticEvent} from 'react';
-import {container} from './actionsStyles';
+import {container, containerInner, button} from './actionsStyles';
 import {ActionsProps} from './ActionsProps';
 
 export class Actions extends React.Component<ActionsProps, any> {
@@ -19,14 +19,14 @@ export class Actions extends React.Component<ActionsProps, any> {
     const repostElement = post.repostsAmount == null
     ? null
     : <div>
-        <button onClick={this.handleRepost}>Repost</button>
-        {post.repostsAmount === 0 ? null : <span>{post.repostsAmount}</span>}
+        <button style={button} onClick={this.handleRepost}><i className="fa fa-retweet" aria-hidden="true" /></button>
+        {post.repostsAmount === 0 ? null : <span style={{ fontSize: '13px' }}>{post.repostsAmount}</span>}
       </div>
 
     return <div style={container}>
-      <div>
-        <button onClick={this.handleLike}>Like</button>
-        <span>{post.likesAmount}</span>
+      <div style={containerInner}>
+        <button style={button} onClick={this.handleLike}><i className="fa fa-heart" aria-hidden="true" /></button>
+        <span style={{ fontSize: '13px' }}>{post.likesAmount}</span>
       </div>
       {repostElement}
     </div>
