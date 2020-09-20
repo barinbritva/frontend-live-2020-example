@@ -23,11 +23,11 @@ export class RepositoryService implements RepositoryComposite {
   }
 
   public getAllPosts(): Promise<WallPost[]> {
-    const postsPromise = Promise.all(this.repositories.map((repository) => {
-      return repository.getAllPosts()
+    const postsPromise = Promise.all(this.enabledRepositories.map((repository) => {
+      return repository.getAllPosts();
     }))
       .then((results) => {
-        const allPosts: WallPost[] = []
+        const allPosts: WallPost[] = [];
         results.forEach((result) => {
           allPosts.push(...result)
         })
@@ -54,13 +54,13 @@ export class RepositoryService implements RepositoryComposite {
     return repository.repostPost(post);
   }
 
-  public filterPosts(enabledProviders: SocialMediaProvider[]) {
+  public filterRepositories(enabledProviders: SocialMediaProvider[]) {
     this.enabledRepositories = this.repositories.filter((repository) => {
       return enabledProviders.includes(repository.provider);
     });
   }
 
-  public getFilters(): SocialMediaProvider[] {
+  public getEnabledRepositories(): SocialMediaProvider[] {
     return this.enabledRepositories.map((repository) => {
       return repository.provider;
     });

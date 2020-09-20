@@ -21,7 +21,7 @@ export class FeedStore extends BaseStore<WallPost[]>{
   public load = () => {
     this.provider.getAllPosts()
         .then((posts) => {
-          this.posts = posts;
+          this.posts = this.sortPostsByDate(posts);
           this.notifySubscribers(this.posts);
         })
   }
@@ -48,11 +48,28 @@ export class FeedStore extends BaseStore<WallPost[]>{
   }
 
   public filter = (enabledProviders: SocialMediaProvider[]) => {
-    this.provider.filterPosts(enabledProviders);
+    this.provider.filterRepositories(enabledProviders);
+
+    this.load();
   }
 
   public getFilters = (): SocialMediaProvider[] => {
-    return this.provider.getFilters();
+    return this.provider.getEnabledRepositories();
+  }
+
+  private sortPostsByDate(posts: WallPost[]): WallPost[] {
+    return posts.sort((a, b) => {
+      const aTimestamp = a.date.getTime();
+      const bTimestamp = b.date.getTime();
+
+      if (aTimestamp === bTimestamp) {
+        return 0;
+      } else if (aTimestamp > bTimestamp) {
+        return -1;
+      } else {
+        return 1;
+      }
+    });
   }
 
   private updatePostDataAndNotify(modifiedPost: WallPost) {
