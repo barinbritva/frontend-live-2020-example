@@ -24,7 +24,9 @@ export const avatar: CSS.Properties = {
 }
 
 export const postAuthor: CSS.Properties = {
-  fontWeight: 600
+  fontWeight: 600,
+  color: '#000',
+  textDecoration: 'none'
 }
 
 export const postData: CSS.Properties = {

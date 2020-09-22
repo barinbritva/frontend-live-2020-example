@@ -20,13 +20,15 @@ export class Post extends React.Component<PostProps, any> {
 
     return <article style={container}>
       <header style={userContainer}>
-        <img
-          style={avatar}
-          alt={post.author.name}
-          src={post.author.avatar}
-        />
+        <a href={post.author.profileLink} target={'_blank'}>
+          <img
+            style={avatar}
+            alt={post.author.name}
+            src={post.author.avatar}
+          />
+        </a>
         <div style={userContainerInfo}>
-          <div style={postAuthor}>{post.author.name}</div>
+          <a href={post.author.profileLink} target={'_blank'} style={postAuthor}>{post.author.name}</a>
           <div style={postData}>
             <span>{date}</span>
             <span> • </span>
