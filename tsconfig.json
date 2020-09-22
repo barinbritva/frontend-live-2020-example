@@ -1,18 +1,18 @@
 {
   "extends": "./tsconfig-base.json",
   "compilerOptions": {
-    "allowUnreachableCode": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "allowUnusedLabels": true
+    "suppressImplicitAnyIndexErrors": true
   }
 }

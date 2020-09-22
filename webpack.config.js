@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'development',
+  mode: process.env.NODE_ENV,
   entry: './src/index.tsx',
   output: {
     path: __dirname + '/public',
@@ -10,8 +10,27 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.tsx?$/, loader: 'ts-loader' }
+      {
+        test: /\.tsx?$/,
+        use: [
+          {
+            loader: 'ts-loader',
+            options:
+              process.env.NODE_ENV === 'development'
+                ? {
+                    compilerOptions: {
+                      allowUnreachableCode: true,
+                      allowUnusedLabels: true,
+                      noUnusedLocals: false,
+                      noUnusedParameters: false
+                    }
+                  }
+                : {}
+          }
+        ]
+      }
     ]
   },
-  devtool: 'source-map'
+  devtool: process.env.NODE_ENV === 'development' ? 'source-map' : false,
+  watch: process.env.NODE_ENV === 'development'
 }
