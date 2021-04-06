@@ -17,7 +17,7 @@ npm run restore-data
 # запустить сборку в режиме watch
 npm run build:dev
 # запустить сервер
-npm run server
+npm run start
 # открыть http://localhost:3000
 ```
 
